@@ -1,0 +1,29 @@
+﻿<Window x:Class="Library_1.ReturnBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ReturnBook" Height="700" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid Background="White">
+        <DataGrid x:Name="DATAGRID" HorizontalAlignment="Left" VerticalAlignment="Top" Height="333" Width="764" BorderBrush="White" Margin="397,43,0,0" Background="#FFDDDDDD" SelectionChanged="DATAGRID_SelectionChanged"/>
+        <Button x:Name="btnShowD" Content="Records with no Return Date Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="371" Margin="602,381,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnShowD_Click" />
+        <StackPanel HorizontalAlignment="Left" Height="243" VerticalAlignment="Top" Width="764" Margin="397,425,0,0" Background="#FF207A83"/>
+        <TextBox x:Name="txtBookIssueDate" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,500,0,0" Background="#FFFFC61B" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="txtBookName" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,448,0,0" Background="#FFFFC61B" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <Label Content="Book Issue Date" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,500,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,448,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Return Date" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,552,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <DatePicker x:Name="dateTimePicker3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="357" Height="38" Background="#FFFFC61B" Margin="738,552,0,0"/>
+        <Button x:Name="btnreturn" Content="Return" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="784,617,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnreturn_Click"/>
+        <Button x:Name="btncancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="936,617,0,0" Height="34" FontWeight="Bold" FontSize="16" />
+        <Image HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="397" Source="Images/jk-rowling-quote-about-books.jpg" RenderTransformOrigin="0.99,2.25" Margin="0,381,0,0" Stretch="Fill"/>
+        <StackPanel HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="315" Margin="42,43,0,0" Background="#FFF8FAFB" OpacityMask="#FFDEE5E6"/>
+        <Image HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="162" Source="Images/issueBook.PNG" RenderTransformOrigin="0.99,2.25" Margin="129,43,0,0" Stretch="Fill"/>
+        <Label Content="Enter Enrollment No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,202,0,0" Width="167" Height="29" FontSize="16" FontWeight="Bold" Background="{x:Null}"/>
+        <TextBox x:Name="txtEnrollbox1" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Margin="109,247,0,0" FontSize="16" TextChanged="txtEnrollbox1_TextChanged" />
+        <Button x:Name="btnrefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="62,301,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnrefresh_Click"/>
+        <Button x:Name="btnexit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="214,301,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnexit_Click" />
+        <Label Content="Enrollment No" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="62,0,0,324" Height="28" Width="118" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtEnrollbox3" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Margin="180,348,0,0" FontSize="16"/>
+        <Button x:Name="close" Content="X" Margin="1165,5,5,667" Background="{x:Null}" FontWeight="Bold" RenderTransformOrigin="11.355,-4.517" FontSize="18" Foreground="#FF080808" BorderBrush="#FF080808" Click="close_Click" />
+
+    </Grid>
+</Window>

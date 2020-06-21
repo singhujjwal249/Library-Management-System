@@ -1,0 +1,43 @@
+﻿<Window x:Class="Library_1.IssueBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IssueBooks" Height="700" Width="1200" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="{x:Null}">
+    <Grid Background="White">
+        <StackPanel HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="315" Margin="42,43,0,0" Background="#FF32BEA6" OpacityMask="#FFDEE5E6"/>
+        <StackPanel Height="661" VerticalAlignment="Top" Margin="400,0,0,0" Background="#FF207A83"/>
+        <Rectangle Height="168" VerticalAlignment="Center" Width="169" Margin="835,10,0,522" HorizontalAlignment="Left">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/Schedule-512.png" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="133" Source="Images/icons8-student-male-100.png" RenderTransformOrigin="0.99,2.25" Margin="129,43,0,0" Stretch="UniformToFill"/>
+        <Label Content="Enter Enrollment No" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,202,0,0" Width="167" Height="29" FontSize="16" FontWeight="Bold" Background="{x:Null}"/>
+        <TextBox x:Name="txtEnrollbox" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Margin="109,247,0,0" FontSize="16" TextChanged="txtEnrollbox_TextChanged"/>
+        <Button x:Name="btnrefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="62,301,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnrefresh_Click"/>
+        <Button x:Name="btnexit" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="214,301,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnexit_Click"/>
+        <TextBox x:Name="txtSName" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,204,0,0" Background="#FFC4D8DE" BorderBrush="#FFEAE5DE" Foreground="Black" FontSize="22" SelectionBrush="#FF0078D7" IsReadOnly="True"/>
+        <TextBox x:Name="txtDep" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,256,0,0" Background="#FFC4D8DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="txtStudentMail" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,412,0,0" Background="#FFC4D8DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="txtStudentMobile" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,360,0,0" Background="#FFC4D8DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <Label Content="Student Name" VerticalAlignment="Top" Height="38" Margin="479,204,462,0" FontWeight="Bold" Foreground="#FFF9F6F6" FontSize="24"/>
+        <Label Content="Department" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="259" Margin="479,256,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Student Email" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,412,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Student Semester" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="254" Margin="479,308,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Student Contact" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,360,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <TextBox x:Name="txtStudentSem" HorizontalAlignment="Left" Height="38" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="738,308,0,0" Background="#FFC4D8DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <ComboBox x:Name="ComboBooksName" HorizontalAlignment="Left" VerticalAlignment="Top" Width="357" Margin="738,464,0,0" Background="#FFC4D8DE" Height="38" BorderBrush="{x:Null}"/>
+        <Label Content="Books Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,464,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Issue Date" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="248" Margin="479,516,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <DatePicker x:Name="dateTimePicker2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="357" Height="38" Background="#FFC4D8DE" Margin="738,516,0,0"/>
+        <Button x:Name="btnIssueBook" Content="Issue Book" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149" Margin="835,584,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnIssueBook_Click"/>
+        <Label Content="**Maximum 3 Books can be ISSUED to 1 Student " HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="564" Margin="636,623,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFFB0707" Background="{x:Null}"/>
+        <Button x:Name="close" Content="X" VerticalAlignment="Bottom" Margin="1165,0,0,667" Background="{x:Null}" Height="28" FontWeight="Bold" RenderTransformOrigin="11.355,-4.517" FontSize="18" Foreground="White" BorderBrush="White" HorizontalAlignment="Left" Width="30" Click="close_Click" />
+        <Button x:Name="btnPresstostart" Content="Press me before Filling Details&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="253" Margin="485,144,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnPresstostart_Click"/>
+        <DataGrid x:Name="DATAGRID" HorizontalAlignment="Left" VerticalAlignment="Top" Height="265" Width="375" BorderBrush="White" Background="White" SelectionChanged="DATAGRID_SelectionChanged" Margin="10,396,0,0"/>
+        <Button x:Name="btnShowD" Content="Show Student Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="253" Margin="75,-1,0,0" Height="34" FontWeight="Bold" FontSize="16" Click="btnShowD_Click"/>
+        <Label Content="Enrollment No" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="62,0,0,324" Height="28" Width="118" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtEnrollbox2" HorizontalAlignment="Left" Height="28" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Margin="180,348,0,0" FontSize="16" TextChanged="txtEnrollbox_TextChanged"/>
+        <Label Content="Issue Books" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="296" Margin="479,60,0,0" Foreground="#FFF7F5F5" FontWeight="Bold" FontSize="48"/>
+
+    </Grid>
+</Window>

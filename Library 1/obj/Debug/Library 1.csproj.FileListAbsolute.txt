@@ -1,0 +1,30 @@
+G:\New folder (2)\Library 1\Library 1\bin\Debug\Library 1.exe.config
+G:\New folder (2)\Library 1\Library 1\bin\Debug\Library 1.exe
+G:\New folder (2)\Library 1\Library 1\bin\Debug\Library 1.pdb
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1.csprojResolveAssemblyReference.cache
+G:\New folder (2)\Library 1\Library 1\obj\Debug\MainWindow.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\MainWindow.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\App.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1_MarkupCompile.cache
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1.g.resources
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library_1.Properties.Resources.resources
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1.csproj.GenerateResource.Cache
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1.exe
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1.pdb
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Library 1_MarkupCompile.lref
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Dashboard.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\Dashboard.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\AddBooks.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\AddBooks.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\ViewBook.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\ViewBook.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\AddStudent.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\AddStudent.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\ViewStudentInformation.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\ViewStudentInformation.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\IssueBooks.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\IssueBooks.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\ReturnBook.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\ReturnBook.g.cs
+G:\New folder (2)\Library 1\Library 1\obj\Debug\CompleteBookDetails.baml
+G:\New folder (2)\Library 1\Library 1\obj\Debug\CompleteBookDetails.g.cs

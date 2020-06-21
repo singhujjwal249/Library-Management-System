@@ -1,0 +1,39 @@
+﻿<Window x:Name="ViewBook1" x:Class="Library_1.ViewBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ViewBook" Height="700" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    
+<Grid Background="#FF207A83">
+        <StackPanel HorizontalAlignment="Left" Height="217" VerticalAlignment="Top" Width="1200" Background="#FF207A83"/>
+        <Rectangle Height="189" VerticalAlignment="Center" Width="214" Margin="32,28,0,483" HorizontalAlignment="Left">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/book-shop-front-view-flat-icon-vector-20912057.jpg" Stretch="UniformToFill"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="View Books" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="281" Margin="373,28,0,0" FontSize="48" FontWeight="Bold" Foreground="#FFF9F1F1" RenderTransformOrigin="0.509,0.673"/>
+        <Label Content="Book Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33" Width="175" Margin="373,143,0,0" Foreground="#FFFBF5F5" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="btnRefresh" Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Width="228" Margin="936,143,0,0" Height="33" FontSize="16" FontWeight="Bold" Click="btnRefresh_Click"/>
+        <TextBox x:Name="txtBookName1" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="371" Margin="525,143,0,0" FontSize="16" TextChanged="txtBookName1_TextChanged"/>
+        <DataGrid x:Name="DataGridView1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="275" Width="760" Margin="32,222,0,0" BorderBrush="#FFF9FDFD" SelectionChanged="DataGridView1_SelectionChanged" />
+        <StackPanel x:Name="panel" HorizontalAlignment="Left" Height="146" VerticalAlignment="Top" Width="1132" Margin="32,519,0,0" Background="#FFF0F0F0"/>
+        <Button x:Name="close" Content="X" HorizontalAlignment="Left" Width="30" Margin="1160,0,0,662" Background="{x:Null}" FontWeight="Bold" RenderTransformOrigin="11.355,-4.517" FontSize="18" Foreground="#FFFDF7F7" BorderBrush="#FFFBFAFA" Click="close_Click" Height="28" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="txtBookName" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Margin="218,535,0,0" Background="#FFD87088" BorderBrush="#FFEAE5DE" Foreground="Black" FontSize="14" SelectionBrush="#FF0078D7"/>
+        <TextBox x:Name="txtAuthor" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="227" Margin="218,575,0,0" Background="#FFD87088" BorderBrush="#FFEAE5DE" FontSize="14" Foreground="Black"/>
+        <TextBox x:Name="txtPublication" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Margin="218,617,0,0" Background="#FFD87088" BorderBrush="#FFEAE5DE" FontSize="14" Foreground="Black"/>
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Margin="627,617,0,0" Background="#FFD87088" BorderBrush="#FFEAE5DE" FontSize="14" Foreground="Black"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Margin="627,575,0,0" Background="#FFD87088" BorderBrush="#FFEAE5DE" FontSize="14" Foreground="Black"/>
+        <Label Content="Book Name" VerticalAlignment="Top" Height="30" Margin="32,535,1058,0" FontWeight="Bold" Foreground="Black" FontSize="14"/>
+        <Label Content="Book Author Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="174" Margin="32,575,0,0" FontWeight="Bold" FontSize="14" Foreground="Black"/>
+        <Label Content="Book Publication" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="174" Margin="32,617,0,0" FontWeight="Bold" FontSize="14" Foreground="Black"/>
+        <Label Content="Book Quantity" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="142" Margin="480,617,0,0" FontWeight="Bold" FontSize="14" Foreground="Black"/>
+        <Label Content="Book Purchase Date" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="142" Margin="480,535,0,0" FontWeight="Bold" FontSize="14" Foreground="Black"/>
+        <Label Content="Book Price" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="142" Margin="480,575,0,0" FontWeight="Bold" FontSize="14" Foreground="Black"/>
+        <DatePicker x:Name="dateTimePicker1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.98,4.5" Height="30" Width="227" Margin="627,535,0,0" SelectedDateFormat="Short" BorderBrush="{x:Null}" Background="#FFD87088" FontSize="14" Foreground="Black"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="872,617,0,0" Height="30" FontWeight="Bold" FontSize="14" Click="btnUpdate_Click" RenderTransformOrigin="0.481,1.28"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="969,617,0,0" Height="30" FontWeight="Bold" FontSize="14" Click="btnDelete_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="1068,617,0,0" Height="30" FontWeight="Bold" FontSize="14" Click="btnCancel_Click"/>
+        <Button x:Name="Show_books" Content="Show Data" HorizontalAlignment="Left" VerticalAlignment="Top" Width="336" Margin="828,222,0,0" Height="33" FontSize="16" FontWeight="Bold" Click="Show_books_Click"/>
+        <TextBox x:Name="txtbId" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Margin="956,535,0,0" Background="#FFD87088" BorderBrush="#FFEAE5DE" FontSize="14" Foreground="Black"/>
+        <Label Content="Book Id" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="79" Margin="872,534,0,0" FontWeight="Bold" FontSize="14" Foreground="Black"/>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="Library_1.AddBooks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddBooks" WindowStartupLocation="CenterScreen" Width="1200" Height="700" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Rectangle Height="144" VerticalAlignment="Top" Fill="#FF207A83"/>
+        <Rectangle HorizontalAlignment="Left" Width="502" Margin="0,144,0,0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/You-cant-buy-happiness.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="135" Margin="488,4,0,0" VerticalAlignment="Top" Width="150">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Images/book_ir.png" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="close" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="30" Margin="1165,5,0,0" Background="{x:Null}" Height="28" FontWeight="Bold" RenderTransformOrigin="11.355,-4.517" FontSize="18" Foreground="#FFFFF8F8" BorderBrush="#FFF9F3F3" Click="close_Click"/>
+        <Label Content="Add Books" HorizontalAlignment="Left" Margin="665,40,0,0" VerticalAlignment="Top" Height="61" Width="193" FontSize="36" FontWeight="Bold" Foreground="#FFF9F6F6"/>
+        <Rectangle HorizontalAlignment="Left" Height="556" VerticalAlignment="Top" Width="693" Margin="507,144,0,0" Fill="#FF207A83"/>
+        <TextBox x:Name="txtBookName" HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="793,209,0,0" Background="#FFEAE5DE" BorderBrush="#FFEAE5DE" Foreground="Black" FontSize="22" SelectionBrush="#FF0078D7"/>
+        <TextBox x:Name="txtAuthor" HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="357" Margin="793,271,0,0" Background="#FFEAE5DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="txtPublication" HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="793,333,0,0" Background="#FFEAE5DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="793,519,0,0" Background="#FFEAE5DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" Margin="793,457,0,0" Background="#FFEAE5DE" BorderBrush="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+        <Label Content="Book Name" VerticalAlignment="Top" Height="51" Margin="534,209,407,0" FontWeight="Bold" Foreground="#FFF9F6F6" FontSize="24"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="793,604,0,0" Height="35" FontWeight="Bold" FontSize="18" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="118" Margin="1032,604,0,0" Height="35" FontWeight="Bold" FontSize="18" Click="btnCancel_Click"/>
+        <Label Content="Book Author Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="254" Margin="534,271,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Publication" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="259" Margin="534,333,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Quantity" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="248" Margin="534,519,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Purchase Date" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="254" Margin="534,395,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <Label Content="Book Price" HorizontalAlignment="Left" VerticalAlignment="Top" Height="51" Width="248" Margin="534,457,0,0" FontWeight="Bold" FontSize="24" Foreground="#FFF9F6F6"/>
+        <DatePicker x:Name="dateTimePicker1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.98,4.5" Height="51" Width="357" Margin="793,395,0,0" SelectedDateFormat="Short" BorderBrush="{x:Null}" Background="#FFEAE5DE" FontSize="22" Foreground="Black"/>
+
+    </Grid>
+</Window>

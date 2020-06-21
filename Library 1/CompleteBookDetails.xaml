@@ -1,0 +1,16 @@
+﻿<Window x:Class="Library_1.CompleteBookDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CompleteBookDetails" Height="700" Width="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid Background="#FF207A83">
+        <Button x:Name="close" Content="X" Margin="1165,5,0,667" Background="{x:Null}" FontWeight="Bold" RenderTransformOrigin="11.355,-4.517" FontSize="18" Foreground="White" BorderBrush="White" HorizontalAlignment="Left" Width="30" Click="close_Click" />
+        <DataGrid x:Name="DataGridissuebook" HorizontalAlignment="Left" VerticalAlignment="Top" Height="235" Width="1137" Margin="31,111,0,0" Background="#FFDDDDDD"/>
+        <DataGrid x:Name="DataGridreturnedbook" HorizontalAlignment="Left" VerticalAlignment="Top" Height="235" Width="1137" Margin="31,437,0,0" Background="#FFDDDDDD"/>
+        <Label Content="Issued Book" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="296" Margin="31,32,0,0" Foreground="#FFF7F5F5" FontWeight="Bold" FontSize="48"/>
+        <Label Content="Returned Book" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="360" Margin="31,363,0,0" Foreground="#FFF7F5F5" FontWeight="Bold" FontSize="48"/>
+        <Button x:Name="btnIssuedbook" Content="View Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Height="38" Margin="412,53,0,0" FontWeight="Bold" FontSize="22" Click="btnIssuedbook_Click"/>
+        <Button x:Name="btnReturned" Content="View Details" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Height="38" Margin="412,385,0,0" FontWeight="Bold" FontSize="22" Click="btnReturned_Click"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="Images/icons8-add-book-96.png" Margin="658,6,0,0"/>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="120" Source="Images/icons8-address-book-100.png" Margin="649,332,0,0" Stretch="UniformToFill"/>
+    </Grid>
+</Window>
